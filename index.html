@@ -3,22 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nethra's personal portfolio website.">
   <title>Nethra | Portfolio</title>
-  <meta name="description" content="Portfolio of Nethra, B.Tech Information Technology student interested in full-stack development.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <canvas id="starfield" aria-hidden="true"></canvas>
   <div class="nebula" aria-hidden="true"></div>
 
   <header class="topbar">
     <a href="#home" class="brand" data-tab="home">Nethra</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="tabNav">
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+      aria-controls="tabNav">
       <span></span><span></span><span></span>
     </button>
+
     <nav id="tabNav" class="tabs" aria-label="Main navigation">
       <button class="tab-btn active" data-tab="home">Home</button>
       <button class="tab-btn" data-tab="about">About Me</button>
@@ -31,43 +39,71 @@
   </header>
 
   <main>
+
     <!-- HOME -->
     <section id="home" class="tab-section active">
       <div class="hero">
         <p class="hello">Hello, I’m</p>
         <h1 class="hero-name">NETHRA</h1>
+
         <p class="hero-role">B.Tech Information Technology Student</p>
-        <p class="hero-sub">Interested in Full-Stack Development</p>
-        <p class="hero-intro">I am an Information Technology student passionate about programming, web development, and creating innovative digital solutions. I enjoy learning new technologies, developing practical projects, and continuously improving my technical skills.</p>
+        <p class="hero-sub">Aspiring Web Developer</p>
+
+        <p class="hero-intro">
+          I am an Information Technology student passionate about programming,
+          web development, and creating innovative digital solutions.
+          I enjoy learning new technologies, developing practical projects,
+          and continuously improving my technical skills.
+        </p>
+
         <div class="btn-row">
-          <button class="btn btn-primary" data-tab="projects">Explore My Work</button>
-          <button class="btn btn-ghost" data-tab="contact">Contact Me</button>
+          <button class="btn btn-primary" data-tab="projects">
+            Explore My Work
+          </button>
+
+          <button class="btn btn-ghost" data-tab="contact">
+            Contact Me
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ABOUT ME -->
     <section id="about" class="tab-section">
       <h2 class="section-title">About Me</h2>
-      <div class="glass wide">
-        <p>I am currently pursuing my Bachelor of Technology in Information Technology at Sathyabama Institute of Science and Technology, Chennai. I completed my schooling at Naalanda Public School. I am interested in software development, programming, and full-stack web development. I enjoy learning new technologies and transforming ideas into practical digital solutions.</p>
-      </div>
-      <div class="grid grid-2">
-        <article class="glass">
-          <h3>Academic background</h3>
-          <p>Second-year B.Tech Information Technology student at Sathyabama Institute of Science and Technology, Chennai, Tamil Nadu.</p>
+
+      <div class="about-grid">
+        <article class="glass about-card">
+          <h3>Academic Background</h3>
+          <p>
+            Currently pursuing B.Tech in Information Technology at
+            Sathyabama Institute of Science and Technology, Chennai.
+            I completed my schooling at Naalanda Public School.
+          </p>
         </article>
-        <article class="glass">
-          <h3>Technical interests</h3>
-          <p>Programming, web development, full-stack development, and problem solving.</p>
+
+        <article class="glass about-card">
+          <h3>Technical Interests</h3>
+          <p>
+            I am interested in software development, programming,
+            full-stack web development, and problem solving.
+          </p>
         </article>
-        <article class="glass">
-          <h3>Learning mindset</h3>
-          <p>I enjoy learning new technologies and building practical projects to sharpen my skills.</p>
+
+        <article class="glass about-card">
+          <h3>Learning Mindset</h3>
+          <p>
+            I enjoy exploring new technologies, strengthening my
+            programming knowledge, and building practical projects.
+          </p>
         </article>
-        <article class="glass">
-          <h3>Career aspirations</h3>
-          <p>To grow in full-stack development and turn ideas into useful digital solutions.</p>
+
+        <article class="glass about-card">
+          <h3>Career Aspirations</h3>
+          <p>
+            My goal is to grow as a developer and transform creative
+            ideas into useful digital solutions.
+          </p>
         </article>
       </div>
     </section>
@@ -75,23 +111,33 @@
     <!-- SKILLS -->
     <section id="skills" class="tab-section">
       <h2 class="section-title">Technical Skills</h2>
+
       <div class="grid grid-3">
         <article class="glass skill-card">
           <h3>Programming Languages</h3>
           <ul class="chips">
-            <li>C</li><li>C++</li><li>Java</li><li>Python</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
           </ul>
         </article>
+
         <article class="glass skill-card">
           <h3>Web Technologies</h3>
           <ul class="chips">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
           </ul>
         </article>
+
         <article class="glass skill-card">
           <h3>Areas of Interest</h3>
           <ul class="chips">
-            <li>Full-Stack Development</li><li>Software Development</li><li>Problem Solving</li>
+            <li>Full-Stack Development</li>
+            <li>Software Development</li>
+            <li>Problem Solving</li>
           </ul>
         </article>
       </div>
@@ -100,115 +146,203 @@
     <!-- EDUCATION -->
     <section id="education" class="tab-section">
       <h2 class="section-title">Education</h2>
-      <div class="timeline">
-        <div class="t-item">
-          <span class="t-dot"></span>
-          <div class="glass">
-            <h3>Bachelor of Technology (B.Tech)</h3>
-            <p class="meta">Information Technology</p>
-            <p>Sathyabama Institute of Science and Technology</p>
-            <p>Chennai, Tamil Nadu</p>
-            <p class="meta">2025–2029 &middot; Currently in Second Year</p>
-            <h4>Academic Performance</h4>
-            <div class="cgpa-row">
-              <div class="cgpa"><span class="cgpa-label">Semester 1</span><span class="cgpa-val">6.50</span><span class="cgpa-unit">CGPA</span></div>
-              <div class="cgpa"><span class="cgpa-label">Semester 2</span><span class="cgpa-val">7.06</span><span class="cgpa-unit">CGPA</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="t-item">
-          <span class="t-dot"></span>
-          <div class="glass">
-            <h3>Higher Secondary Education (12th)</h3>
-            <p>Naalanda Public School</p>
-            <p class="score">61.2%</p>
-          </div>
-        </div>
-        <div class="t-item">
-          <span class="t-dot"></span>
-          <div class="glass">
-            <h3>Secondary Education (10th)</h3>
-            <p>Naalanda Public School</p>
-            <p class="score">68.6%</p>
-          </div>
-        </div>
+
+      <p class="education-intro">
+        Academic journey and performance
+      </p>
+
+      <div class="education-row">
+
+        <article class="glass education-card">
+          <span class="education-kicker">10th Standard</span>
+          <h3>Naalanda Public School</h3>
+          <p class="score">68.6%</p>
+          <p class="meta">Secondary Education</p>
+        </article>
+
+        <article class="glass education-card">
+          <span class="education-kicker">12th Standard</span>
+          <h3>Naalanda Public School</h3>
+          <p class="score">61.2%</p>
+          <p class="meta">Higher Secondary Education</p>
+        </article>
+
+        <article class="glass education-card">
+          <span class="education-kicker">Semester 1</span>
+          <h3>B.Tech Information Technology</h3>
+          <p class="score">6.50</p>
+          <p class="meta">CGPA · Sathyabama Institute</p>
+        </article>
+
+        <article class="glass education-card">
+          <span class="education-kicker">Semester 2</span>
+          <h3>B.Tech Information Technology</h3>
+          <p class="score">7.06</p>
+          <p class="meta">CGPA · Sathyabama Institute</p>
+        </article>
+
       </div>
+
+      <p class="college-note">
+        Sathyabama Institute of Science and Technology ·
+        Chennai, Tamil Nadu · 2025–2029
+      </p>
     </section>
 
     <!-- CERTIFICATIONS -->
     <section id="certifications" class="tab-section">
       <h2 class="section-title">Certifications</h2>
-      <div class="grid grid-2">
+
+      <div class="grid grid-2 cert-grid">
+
         <article class="glass cert">
           <h3>Programming in Java</h3>
           <p class="meta">NPTEL</p>
           <p class="badge">Elite + Silver</p>
-          <a class="btn btn-primary" href="programming-in-java.pdf" target="_blank" rel="noopener">View Certificate</a>
+
+          <a class="btn btn-primary"
+            href="programming-in-java.pdf"
+            target="_blank"
+            rel="noopener">
+            View Certificate
+          </a>
         </article>
+
         <article class="glass cert">
           <h3>Python for Data Science</h3>
           <p class="meta">NPTEL</p>
-          <a class="btn btn-primary" href="python-data-science.pdf" target="_blank" rel="noopener">View Certificate</a>
+
+          <a class="btn btn-primary"
+            href="python-data-science.pdf"
+            target="_blank"
+            rel="noopener">
+            View Certificate
+          </a>
         </article>
+
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="tab-section">
       <h2 class="section-title">Projects</h2>
-      <div class="grid grid-2">
+
+      <div class="grid grid-2 project-grid">
+
         <article class="glass project">
-          <h3>Personal Portfolio Website</h3>
-          <ul class="chips small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          <p>A responsive portfolio website showcasing my education, skills, projects, and certifications.</p>
+          <div>
+            <h3>CampusFlow</h3>
+          </div>
+
+          <p>
+            A live project in the campus-focused digital space.
+            This project is included in my portfolio to showcase
+            my practical development work.
+          </p>
+
+          <p class="project-note">
+            Add the exact problem it solves, its main features,
+            and your contribution here.
+          </p>
+
+          <a class="btn btn-primary"
+            href="https://lnkd.in/g2RgwfTq"
+            target="_blank"
+            rel="noopener">
+            View Live Project
+          </a>
         </article>
+
         <article class="glass project">
-          <h3>CampusFlow</h3>
-          <p class="muted">Live project</p>
-          <a class="btn btn-primary" href="https://lnkd.in/g2RgwfTq" target="_blank" rel="noopener">View Live</a>
+          <div>
+            <h3>AstroNavi</h3>
+          </div>
+
+          <p>
+            An astronomy-themed website created to explore and
+            present space-related topics through a dedicated
+            web experience.
+          </p>
+
+          <p class="project-note">
+            Built as a front-end web project using HTML,
+            CSS, and JavaScript.
+          </p>
+
+          <a class="btn btn-primary"
+            href="https://lnkd.in/gKQHFtXM"
+            target="_blank"
+            rel="noopener">
+            View Live Project
+          </a>
         </article>
-        <article class="glass project">
-          <h3>AstroNavi</h3>
-          <p class="muted">Astronomy website</p>
-          <a class="btn btn-primary" href="https://lnkd.in/gKQHFtXM" target="_blank" rel="noopener">View Live</a>
-        </article>
-        <article class="glass project placeholder future">
-          <h3>Next project</h3>
-          <p class="muted">Space reserved for a future project.</p>
-        </article>
+
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="tab-section">
       <h2 class="section-title">Contact</h2>
-      <div class="glass wide contact">
-        <p>Want to work together or just say hello? Reach me through any of these.</p>
+
+      <div class="glass contact-card">
+        <p>
+          Want to work together or just say hello?
+          Reach me through any of these.
+        </p>
+
         <ul class="contact-list">
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm0 2v.5l8 5.5 8-5.5V7l-8 5.5L4 7z"/></svg>
-            <a href="mailto:nethralakshmanan74@gmail.com">nethralakshmanan74@gmail.com</a>
+            <span class="contact-symbol">✉</span>
+            <a href="mailto:nethralakshmanan74@gmail.com">
+              nethralakshmanan74@gmail.com
+            </a>
           </li>
+
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
-            <a href="https://github.com/nethra2229" target="_blank" rel="noopener">github.com/nethra2229</a>
+            <span class="contact-symbol">GH</span>
+            <a href="https://github.com/nethra2229"
+              target="_blank" rel="noopener">
+              github.com/nethra2229
+            </a>
           </li>
+
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.83v1.54h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.14V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V21h-4z"/></svg>
-            <a href="https://www.linkedin.com/in/nethra-lakshmanan-4a1902381" target="_blank" rel="noopener">linkedin.com/in/nethra-lakshmanan</a>
+            <span class="contact-symbol">in</span>
+            <a href="https://www.linkedin.com/in/nethra-lakshmanan-4a1902381"
+              target="_blank" rel="noopener">
+              linkedin.com/in/nethra-lakshmanan
+            </a>
           </li>
         </ul>
+
         <div class="btn-row">
-          <a class="btn btn-primary" href="mailto:nethralakshmanan74@gmail.com">Email Me</a>
-          <a class="btn btn-ghost" href="https://github.com/nethra2229" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/nethra-lakshmanan-4a1902381" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-primary"
+            href="mailto:nethralakshmanan74@gmail.com">
+            Email Me
+          </a>
+
+          <a class="btn btn-ghost"
+            href="https://github.com/nethra2229"
+            target="_blank" rel="noopener">
+            GitHub
+          </a>
+
+          <a class="btn btn-ghost"
+            href="https://www.linkedin.com/in/nethra-lakshmanan-4a1902381"
+            target="_blank" rel="noopener">
+            LinkedIn
+          </a>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
-    <p>Designed &amp; Developed by Nethra &middot; <span id="year"></span></p>
+    <p>
+      Designed &amp; Developed by Nethra ·
+      <span id="year"></span>
+    </p>
   </footer>
 
   <script src="script.js"></script>
